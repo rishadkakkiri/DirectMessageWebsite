@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      name="description"
+      content="Direct Message — message any phone number without saving contacts. Share direct chat links, optional pre-filled text, dark mode, and a fast, lightweight experience."
+    />
+    <title>Direct Message — Chat without saving contacts</title>
+    <link rel="stylesheet" href="./LandingPageStyles.css" />
+  </head>
+  <body>
+    <!--
+      Positioning aligned with similar “direct chat” apps on Google Play
+      (e.g. messaging without cluttering contacts). Replace commonPlayStoreAppUrl
+      in CommonWebsiteConstants.js with your live listing when published.
+    -->
+    <header class="siteHeader">
+      <a href="#" class="siteLogo" aria-label="Direct Message home">
+        <span class="siteLogoIcon" aria-hidden="true">DM</span>
+        Direct Message
+      </a>
+      <nav class="siteNav" aria-label="Primary">
+        <a href="#features">Features</a>
+        <a href="#download">Get the app</a>
+        <a class="buttonPrimary" data-play-store href="#download">Google Play</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="heroSection" aria-labelledby="hero-heading">
+        <div class="heroInner">
+          <div>
+            <span class="heroBadge">No contact clutter · Optional pre-filled message</span>
+            <h1 id="hero-heading" class="heroTitle">
+              Message anyone
+              <span class="heroTitleAccent">without saving their number</span>
+            </h1>
+            <p class="heroSubtitle">
+              Open a direct chat from your phone, optionally start with text already
+              filled in, and share a link that jumps straight into the conversation —
+              built for people you text once in a while, not everyone in your address
+              book.
+            </p>
+            <div class="heroActions">
+              <a class="buttonPrimary" data-play-store href="#download"
+                >Get it on Google Play</a
+              >
+              <a class="buttonSecondary" href="#features">Explore features</a>
+            </div>
+          </div>
+          <div class="heroMockup" aria-hidden="true">
+            <div class="heroMockupHeader">
+              <div class="heroMockupDots">
+                <span></span><span></span><span></span>
+              </div>
+              <span class="heroMockupLabel">Direct chat</span>
+            </div>
+            <div class="mockChat">
+              <div class="mockBubble mockBubbleIncoming">
+                Need to reach the courier — do I have to add them as a contact?
+              </div>
+              <div class="mockBubble mockBubbleOutgoing">
+                No — paste their number or open the link I sent; your message can be
+                ready to tap send.
+              </div>
+              <div class="mockBubble mockBubbleIncoming">
+                Perfect. Keeps my contacts list clean.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="features"
+        class="sectionBlock sectionBlockAlt"
+        aria-labelledby="features-heading"
+      >
+        <div class="sectionInner">
+          <h2 id="features-heading" class="sectionTitle">Why Direct Message</h2>
+          <p class="sectionLead">
+            Fast, simple direct messaging — say what you need without turning every
+            number into a permanent contact.
+          </p>
+          <div class="featureGrid">
+            <article class="featureCard">
+              <div class="featureIcon" aria-hidden="true">✉️</div>
+              <h3>Chat without saving contacts</h3>
+              <p>
+                Start a conversation using a phone number you have not stored on your
+                device — ideal for one-off or infrequent chats.
+              </p>
+            </article>
+            <article class="featureCard">
+              <div class="featureIcon" aria-hidden="true">📝</div>
+              <h3>Pre-filled message (optional)</h3>
+              <p>
+                Optionally prepare text before the chat opens so you can send the right
+                wording in one step.
+              </p>
+            </article>
+            <article class="featureCard">
+              <div class="featureIcon" aria-hidden="true">🔗</div>
+              <h3>Shareable direct links</h3>
+              <p>
+                Generate a link others can use to open the same style of direct chat —
+                handy when you want a frictionless handoff.
+              </p>
+            </article>
+            <article class="featureCard">
+              <div class="featureIcon" aria-hidden="true">🌙</div>
+              <h3>Dark mode</h3>
+              <p>
+                Comfortable in low light with an interface that supports dark theme for
+                easier reading day or night.
+              </p>
+            </article>
+            <article class="featureCard">
+              <div class="featureIcon" aria-hidden="true">🚀</div>
+              <h3>No account required to start</h3>
+              <p>
+                Focus on getting the message out — choose a flow that does not depend on
+                signing up before you can chat.
+              </p>
+            </article>
+            <article class="featureCard">
+              <div class="featureIcon" aria-hidden="true">🔋</div>
+              <h3>Fast and light on battery</h3>
+              <p>
+                Tuned for quick delivery and efficient use of data and power so you can
+                rely on it throughout the day.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="download" class="ctaSection" aria-labelledby="cta-heading">
+        <div class="ctaBox">
+          <h2 id="cta-heading">Get Direct Message on Android</h2>
+          <p>
+            When your app is live on Google Play, set your store URL in
+            <code class="ctaCode">CommonWebsiteConstants.js</code> — the buttons above
+            will open your listing automatically. Until then, the download buttons
+            scroll here so visitors know where to look.
+          </p>
+          <a class="buttonPrimary" data-play-store href="#download">Download on Google Play</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="siteFooter">
+      <p>
+        © <span id="currentYear"></span> Direct Message. Built for direct chats without
+        contact clutter.
+      </p>
+      <p>
+        <a href="#features">Features</a>
+        ·
+        <a href="https://pages.github.com/" rel="noopener noreferrer">GitHub Pages</a>
+      </p>
+    </footer>
+
+    <script src="./CommonWebsiteConstants.js"></script>
+    <script>
+      (function SetCurrentYearInFooter() {
+        var yearElement = document.getElementById("currentYear");
+        if (yearElement) {
+          yearElement.textContent = String(new Date().getFullYear());
+        }
+      })();
+    </script>
+  </body>
+</html>

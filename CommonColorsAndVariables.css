@@ -1,0 +1,36 @@
+/**
+ * Central color and design tokens for the Direct Message website.
+ * Primary accent: WhatsApp brand green (#25D366) and related palette.
+ * Reference these variables from other stylesheets only — do not duplicate hex values elsewhere.
+ */
+:root {
+  --colorBackgroundDeep: #0a0e14;
+  --colorBackgroundElevated: #121820;
+  --colorBackgroundCard: #161d27;
+  --colorSurfaceBorder: #1e2835;
+  --colorTextPrimary: #f0f4f8;
+  --colorTextSecondary: #8b9aaf;
+  --colorTextMuted: #5c6b7f;
+  /* WhatsApp-inspired greens */
+  --colorAccentPrimary: #25d366;
+  --colorAccentDeep: #128c7e;
+  --colorAccentDark: #075e54;
+  --colorAccentLight: #a8e6c4;
+  --colorAccentButtonTop: #3ee07a;
+  --colorAccentSecondary: #128c7e;
+  --colorAccentGlow: rgba(37, 211, 102, 0.35);
+  --colorAccentIconMuted: rgba(37, 211, 102, 0.15);
+  --colorAccentBorderHover: rgba(37, 211, 102, 0.35);
+  --colorAccentBadgeBackground: rgba(37, 211, 102, 0.12);
+  --colorAccentBadgeBorder: rgba(37, 211, 102, 0.25);
+  --colorGradientStart: #123d28;
+  --colorGradientEnd: #0a0e14;
+  --fontFamilyBase: "DM Sans", system-ui, -apple-system, sans-serif;
+  --fontFamilyDisplay: "Outfit", "DM Sans", system-ui, sans-serif;
+  --shadowCard: 0 8px 32px rgba(0, 0, 0, 0.35);
+  --radiusLarge: 20px;
+  --radiusMedium: 12px;
+  --radiusPill: 999px;
+  --spaceSection: clamp(3rem, 8vw, 6rem);
+  --maxWidthContent: 1120px;
+}
