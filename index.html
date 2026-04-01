@@ -5,26 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta
       name="description"
-      content="Direct Message — message any phone number without saving contacts. Share direct chat links, optional pre-filled text, dark mode, and a fast, lightweight experience."
+      content="Direct Message — start WhatsApp chats without saving contacts. Paste numbers, use quick messages, country codes, and keep your phonebook clean."
     />
-    <title>Direct Message — Chat without saving contacts</title>
+    <title>Direct Message — Start chats without saving contacts</title>
+    <link
+      rel="icon"
+      type="image/png"
+      href="./WebsiteBrandAssetsImages/DirectMessageAppIconImage.png"
+      sizes="any"
+    />
+    <link
+      rel="apple-touch-icon"
+      href="./WebsiteBrandAssetsImages/DirectMessageAppIconImage.png"
+    />
     <link rel="stylesheet" href="./LandingPageStyles.css" />
   </head>
   <body>
-    <!--
-      Positioning aligned with similar “direct chat” apps on Google Play
-      (e.g. messaging without cluttering contacts). Replace commonPlayStoreAppUrl
-      in CommonWebsiteConstants.js with your live listing when published.
-    -->
     <header class="siteHeader">
       <a href="#" class="siteLogo" aria-label="Direct Message home">
-        <span class="siteLogoIcon" aria-hidden="true">DM</span>
+        <img
+          class="siteLogoImage"
+          src="./WebsiteBrandAssetsImages/DirectMessageAppIconImage.png"
+          width="36"
+          height="36"
+          alt=""
+          decoding="async"
+        />
         Direct Message
       </a>
       <nav class="siteNav" aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#why-use">Why use</a>
         <a href="#features">Features</a>
-        <a href="#download">Get the app</a>
+        <a href="#how-to-use">How to use</a>
+        <a href="#privacy">Privacy</a>
         <a class="buttonPrimary" data-play-store href="#download">Google Play</a>
+        <a class="buttonPrimary" data-app-store href="#download">App Store</a>
       </nav>
     </header>
 
@@ -32,22 +48,24 @@
       <section class="heroSection" aria-labelledby="hero-heading">
         <div class="heroInner">
           <div>
-            <span class="heroBadge">No contact clutter · Optional pre-filled message</span>
+            <span class="heroBadge">WhatsApp-ready · No contact clutter</span>
             <h1 id="hero-heading" class="heroTitle">
-              Message anyone
-              <span class="heroTitleAccent">without saving their number</span>
+              Start chats instantly
+              <span class="heroTitleAccent">without saving contacts</span>
             </h1>
             <p class="heroSubtitle">
-              Open a direct chat from your phone, optionally start with text already
-              filled in, and share a link that jumps straight into the conversation —
-              built for people you text once in a while, not everyone in your address
-              book.
+              Tired of saving phone numbers just to send a message on WhatsApp? With
+              Direct Message, quickly message any number without adding it to your
+              contact list — simple, fast, and hassle-free.
             </p>
             <div class="heroActions">
               <a class="buttonPrimary" data-play-store href="#download"
-                >Get it on Google Play</a
+                >Google Play (Android)</a
               >
-              <a class="buttonSecondary" href="#features">Explore features</a>
+              <a class="buttonPrimary" data-app-store href="#download"
+                >App Store (iOS)</a
+              >
+              <a class="buttonSecondary" href="#overview">Learn more</a>
             </div>
           </div>
           <div class="heroMockup" aria-hidden="true">
@@ -55,109 +73,270 @@
               <div class="heroMockupDots">
                 <span></span><span></span><span></span>
               </div>
-              <span class="heroMockupLabel">Direct chat</span>
+              <span class="heroMockupLabel">Direct Message</span>
             </div>
             <div class="mockChat">
               <div class="mockBubble mockBubbleIncoming">
-                Need to reach the courier — do I have to add them as a contact?
+                Paste the number, tap start chat — opens in WhatsApp instantly.
               </div>
               <div class="mockBubble mockBubbleOutgoing">
-                No — paste their number or open the link I sent; your message can be
-                ready to tap send.
+                No need to save delivery drivers or one-time contacts anymore.
               </div>
               <div class="mockBubble mockBubbleIncoming">
-                Perfect. Keeps my contacts list clean.
+                Copy from email or notes, paste here — done.
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="overview" class="sectionBlock" aria-labelledby="overview-heading">
+        <div class="sectionInner proseSection">
+          <h2 id="overview-heading" class="sectionTitle sectionTitleLeft">
+            Message without filling your contact list
+          </h2>
+          <div class="proseColumns">
+            <div class="proseBlock">
+              <p>
+                Direct Message is a convenient tool for anyone who wants to start a
+                WhatsApp chat without saving the number first. Enter the phone number,
+                tap <strong>start chat</strong>, and the app opens the conversation in
+                WhatsApp instantly. It is quick, simple, and hassle-free.
+              </p>
+              <p>
+                To make things even easier, the app supports <strong>copy and paste</strong>.
+                Copy a phone number from anywhere — a website, email, notes, or another
+                app — and paste it directly into Direct Message to start the chat
+                immediately.
+              </p>
+              <p>
+                If the phone number is not on WhatsApp, WhatsApp will notify you
+                automatically.
+              </p>
+            </div>
+            <div class="proseBlock">
+              <p>
+                Many of us need to message someone only once — a delivery driver,
+                technician, cab driver, customer, or other temporary contact. Saving
+                those numbers permanently clutters your contact list. Sometimes those
+                contacts can also see your WhatsApp status and profile, which you may
+                not want.
+              </p>
+              <p>
+                Direct Message helps you avoid that by letting you start chats instantly
+                without saving numbers. Keep your contact list clean, protect your
+                privacy, and send messages more efficiently.
+              </p>
+              <p class="proseHighlight">
+                Send direct messages easily, quickly, and without cluttering your contacts
+                with Direct Message. The app is designed for both personal and business
+                communication, making quick messaging easier and more efficient.
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       <section
-        id="features"
+        id="why-use"
         class="sectionBlock sectionBlockAlt"
+        aria-labelledby="why-use-heading"
+      >
+        <div class="sectionInner proseSection">
+          <h2 id="why-use-heading" class="sectionTitle">Why use Direct Message?</h2>
+          <p class="sectionLead sectionLeadWide">
+            Many people work with new phone numbers every day — deliveries, customer
+            support, logistics, online orders, and business communication. Saving every
+            number permanently is not practical and makes contact lists hard to manage.
+          </p>
+          <p class="proseCenter">
+            Direct Message lets you start conversations when you need them, save time,
+            and keep your phonebook clean. It is a useful tool for business owners, sales
+            teams, drivers, logistics companies, freelancers, and online sellers who
+            frequently message new contacts.
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="features"
+        class="sectionBlock"
         aria-labelledby="features-heading"
       >
         <div class="sectionInner">
-          <h2 id="features-heading" class="sectionTitle">Why Direct Message</h2>
+          <h2 id="features-heading" class="sectionTitle">Main features</h2>
           <p class="sectionLead">
-            Fast, simple direct messaging — say what you need without turning every
-            number into a permanent contact.
+            Everything you need to open chats faster and repeat less typing.
           </p>
-          <div class="featureGrid">
-            <article class="featureCard">
-              <div class="featureIcon" aria-hidden="true">✉️</div>
-              <h3>Chat without saving contacts</h3>
+          <div class="featureGrid featureGridTwoCol">
+            <article class="featureCard featureCardTall">
+              <div class="featureIcon" aria-hidden="true">💬</div>
+              <h3>Direct chat</h3>
               <p>
-                Start a conversation using a phone number you have not stored on your
-                device — ideal for one-off or infrequent chats.
+                Enter or paste a phone number and open the chat instantly in your
+                preferred messaging app.
+              </p>
+            </article>
+            <article class="featureCard featureCardTall">
+              <div class="featureIcon" aria-hidden="true">⚡</div>
+              <h3>Quick messages</h3>
+              <p>
+                Create and save message templates you use often so you can send common
+                messages quickly without typing every time.
+              </p>
+              <p class="featureExamplesLabel">Examples:</p>
+              <ul class="featureList">
+                <li>Greetings</li>
+                <li>Delivery updates</li>
+                <li>Payment reminders</li>
+                <li>Location requests</li>
+                <li>Business introductions</li>
+              </ul>
+            </article>
+            <article class="featureCard">
+              <div class="featureIcon" aria-hidden="true">📋</div>
+              <h3>Number auto detection</h3>
+              <p>
+                When you copy a phone number from another app, Direct Message can detect
+                it so you can open the chat quickly without typing it manually.
               </p>
             </article>
             <article class="featureCard">
-              <div class="featureIcon" aria-hidden="true">📝</div>
-              <h3>Pre-filled message (optional)</h3>
+              <div class="featureIcon" aria-hidden="true">🕐</div>
+              <h3>Recent numbers</h3>
               <p>
-                Optionally prepare text before the chat opens so you can send the right
-                wording in one step.
+                Recently used phone numbers are saved so you can start a conversation
+                again without re-entering the number.
               </p>
             </article>
             <article class="featureCard">
-              <div class="featureIcon" aria-hidden="true">🔗</div>
-              <h3>Shareable direct links</h3>
+              <div class="featureIcon" aria-hidden="true">📨</div>
+              <h3>Recent messages</h3>
               <p>
-                Generate a link others can use to open the same style of direct chat —
-                handy when you want a frictionless handoff.
+                View messages you sent before and reuse them when sending new messages.
               </p>
             </article>
             <article class="featureCard">
-              <div class="featureIcon" aria-hidden="true">🌙</div>
-              <h3>Dark mode</h3>
+              <div class="featureIcon" aria-hidden="true">🔀</div>
+              <h3>Messaging options</h3>
               <p>
-                Comfortable in low light with an interface that supports dark theme for
-                easier reading day or night.
+                Open chats using your preferred platform or send SMS directly from the
+                app.
               </p>
             </article>
-            <article class="featureCard">
-              <div class="featureIcon" aria-hidden="true">🚀</div>
-              <h3>No account required to start</h3>
+            <article class="featureCard featureCardWide">
+              <div class="featureIcon" aria-hidden="true">🌍</div>
+              <h3>Country code selector</h3>
               <p>
-                Focus on getting the message out — choose a flow that does not depend on
-                signing up before you can chat.
-              </p>
-            </article>
-            <article class="featureCard">
-              <div class="featureIcon" aria-hidden="true">🔋</div>
-              <h3>Fast and light on battery</h3>
-              <p>
-                Tuned for quick delivery and efficient use of data and power so you can
-                rely on it throughout the day.
+                Easily select country codes for international numbers and messaging.
               </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section id="download" class="ctaSection" aria-labelledby="cta-heading">
-        <div class="ctaBox">
-          <h2 id="cta-heading">Get Direct Message on Android</h2>
-          <p>
-            When your app is live on Google Play, set your store URL in
-            <code class="ctaCode">CommonWebsiteConstants.js</code> — the buttons above
-            will open your listing automatically. Until then, the download buttons
-            scroll here so visitors know where to look.
+      <section
+        id="how-to-use"
+        class="sectionBlock sectionBlockAlt"
+        aria-labelledby="how-to-use-heading"
+      >
+        <div class="sectionInner">
+          <h2 id="how-to-use-heading" class="sectionTitle">How to use</h2>
+          <p class="sectionLead">
+            Five quick steps from number to conversation.
           </p>
-          <a class="buttonPrimary" data-play-store href="#download">Download on Google Play</a>
+          <ol class="numberedSteps" aria-label="Steps to start a chat">
+            <li>
+              <span class="numberedStepsText"
+                >Enter or paste a phone number, or use automatic number detection.</span
+              >
+            </li>
+            <li>
+              <span class="numberedStepsText">Select the country code.</span>
+            </li>
+            <li>
+              <span class="numberedStepsText"
+                >Type a message or choose a quick message.</span
+              >
+            </li>
+            <li>
+              <span class="numberedStepsText"
+                >Choose the messaging platform or SMS.</span
+              >
+            </li>
+            <li>
+              <span class="numberedStepsText">The chat opens instantly.</span>
+            </li>
+          </ol>
+        </div>
+      </section>
+
+      <section id="privacy" class="sectionBlock" aria-labelledby="privacy-heading">
+        <div class="sectionInner">
+          <h2 id="privacy-heading" class="sectionTitle">Privacy advantage</h2>
+          <p class="sectionLead sectionLeadWide">
+            Because temporary numbers are not saved in your contacts, your contact list
+            stays organised and more private.
+          </p>
+          <p class="proseCenter privacyPolicyLinkWrap">
+            <a class="buttonSecondary" href="./Screens/PrivacyPolicyScreen.html"
+              >Read full Privacy Policy</a
+            >
+          </p>
+        </div>
+      </section>
+
+      <section
+        id="download"
+        class="ctaSection"
+        aria-labelledby="cta-heading"
+      >
+        <div class="ctaBox">
+          <h2 id="cta-heading">Download Direct Message</h2>
+          <p>
+            Get the app on Google Play for Android or on the App Store for iPhone and
+            iPad.
+          </p>
+          <div class="downloadButtonsRow">
+            <a class="buttonPrimary" data-play-store href="#download"
+              >Google Play (Android)</a
+            >
+            <a class="buttonPrimary" data-app-store href="#download"
+              >App Store (iOS)</a
+            >
+          </div>
+        </div>
+      </section>
+
+      <section
+        id="disclaimer"
+        class="sectionBlock disclaimerSection"
+        aria-labelledby="disclaimer-heading"
+      >
+        <div class="sectionInner">
+          <h2 id="disclaimer-heading" class="disclaimerTitle">Disclaimer</h2>
+          <p class="disclaimerText">
+            This app is not affiliated with or endorsed by WhatsApp. This app only helps
+            users open chats in the official messaging applications installed on the
+            device.
+          </p>
         </div>
       </section>
     </main>
 
     <footer class="siteFooter">
       <p>
-        © <span id="currentYear"></span> Direct Message. Built for direct chats without
-        contact clutter.
+        © <span id="currentYear"></span> Direct Message. Start chats without contact
+        clutter.
       </p>
       <p>
+        <a href="#overview">Overview</a>
+        ·
         <a href="#features">Features</a>
+        ·
+        <a href="#disclaimer">Disclaimer</a>
+        ·
+        <a href="./Screens/PrivacyPolicyScreen.html">Privacy Policy</a>
         ·
         <a href="https://pages.github.com/" rel="noopener noreferrer">GitHub Pages</a>
       </p>

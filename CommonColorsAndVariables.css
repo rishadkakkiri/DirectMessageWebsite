@@ -1,6 +1,6 @@
 /**
  * Central color and design tokens for the Direct Message website.
- * Primary accent: WhatsApp brand green (#25D366) and related palette.
+ * Primary / deep greens align with the app icon (bright + forest split).
  * Reference these variables from other stylesheets only — do not duplicate hex values elsewhere.
  */
 :root {
@@ -11,19 +11,19 @@
   --colorTextPrimary: #f0f4f8;
   --colorTextSecondary: #8b9aaf;
   --colorTextMuted: #5c6b7f;
-  /* WhatsApp-inspired greens */
+  /* App icon: bright half + forest green half */
   --colorAccentPrimary: #25d366;
-  --colorAccentDeep: #128c7e;
-  --colorAccentDark: #075e54;
+  --colorAccentDeep: #1e4332;
+  --colorAccentDark: #153528;
   --colorAccentLight: #a8e6c4;
   --colorAccentButtonTop: #3ee07a;
-  --colorAccentSecondary: #128c7e;
+  --colorAccentSecondary: #1e4332;
   --colorAccentGlow: rgba(37, 211, 102, 0.35);
   --colorAccentIconMuted: rgba(37, 211, 102, 0.15);
   --colorAccentBorderHover: rgba(37, 211, 102, 0.35);
   --colorAccentBadgeBackground: rgba(37, 211, 102, 0.12);
   --colorAccentBadgeBorder: rgba(37, 211, 102, 0.25);
-  --colorGradientStart: #123d28;
+  --colorGradientStart: #1a3d2e;
   --colorGradientEnd: #0a0e14;
   --fontFamilyBase: "DM Sans", system-ui, -apple-system, sans-serif;
   --fontFamilyDisplay: "Outfit", "DM Sans", system-ui, sans-serif;

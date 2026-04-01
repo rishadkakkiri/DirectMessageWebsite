@@ -35,8 +35,10 @@ a:hover {
   top: 0;
   z-index: 100;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+  gap: 1rem;
   padding: 1rem 1.5rem;
   max-width: var(--maxWidthContent);
   margin: 0 auto;
@@ -56,24 +58,23 @@ a:hover {
   gap: 0.5rem;
 }
 
-.siteLogoIcon {
-  width: 32px;
-  height: 32px;
-  border-radius: var(--radiusMedium);
-  background: linear-gradient(
-    135deg,
-    var(--colorAccentPrimary),
-    var(--colorAccentDeep)
-  );
-  display: grid;
-  place-items: center;
-  font-size: 0.875rem;
+.siteLogoImage {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: block;
+  object-fit: contain;
+  flex-shrink: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.25);
 }
 
 .siteNav {
   display: flex;
-  gap: 1.5rem;
+  flex-wrap: wrap;
+  gap: 0.65rem 1rem;
   align-items: center;
+  justify-content: flex-end;
+  max-width: min(100%, 52rem);
 }
 
 .siteNav a {
@@ -194,7 +195,7 @@ a.buttonPrimary:active {
   margin: 0 0 1.75rem;
   font-size: 1.125rem;
   color: var(--colorTextSecondary);
-  max-width: 36ch;
+  max-width: 48ch;
 }
 
 .heroActions {
@@ -340,6 +341,61 @@ a.buttonSecondary:hover {
   font-size: 1.0625rem;
 }
 
+.sectionLeadWide {
+  max-width: 62ch;
+}
+
+.sectionTitleLeft {
+  text-align: left;
+}
+
+.proseSection .sectionTitle {
+  margin-bottom: 1.5rem;
+}
+
+.proseColumns {
+  display: grid;
+  gap: 2rem 3rem;
+}
+
+@media (min-width: 900px) {
+  .proseColumns {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.proseBlock p {
+  margin: 0 0 1.1rem;
+  color: var(--colorTextSecondary);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+.proseBlock p:last-child {
+  margin-bottom: 0;
+}
+
+.proseHighlight {
+  padding: 1.25rem 1.35rem;
+  border-radius: var(--radiusLarge);
+  border: 1px solid var(--colorSurfaceBorder);
+  background: var(--colorBackgroundCard);
+  color: var(--colorTextPrimary);
+}
+
+.proseCenter {
+  margin: 0 auto;
+  max-width: 62ch;
+  text-align: center;
+  color: var(--colorTextSecondary);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+.privacyPolicyLinkWrap {
+  margin-top: 1.75rem;
+}
+
 .featureGrid {
   display: grid;
   gap: 1.25rem;
@@ -355,6 +411,123 @@ a.buttonSecondary:hover {
   .featureGrid {
     grid-template-columns: repeat(3, 1fr);
   }
+
+  .featureGridTwoCol .featureCardWide {
+    grid-column: 1 / -1;
+    max-width: 100%;
+  }
+}
+
+.featureGridTwoCol {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 640px) {
+  .featureGridTwoCol {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 900px) {
+  .featureGridTwoCol {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+.featureCardTall {
+  min-height: 100%;
+}
+
+.featureExamplesLabel {
+  margin: 1rem 0 0.35rem;
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--colorTextMuted);
+}
+
+.featureList {
+  margin: 0;
+  padding-left: 1.15rem;
+  color: var(--colorTextSecondary);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+.featureList li {
+  margin-bottom: 0.35rem;
+}
+
+.numberedSteps {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0;
+  max-width: 40rem;
+  counter-reset: stepCounter;
+}
+
+.numberedSteps li {
+  position: relative;
+  counter-increment: stepCounter;
+  padding: 1rem 1rem 1rem 3.75rem;
+  margin-bottom: 0.75rem;
+  background: var(--colorBackgroundCard);
+  border: 1px solid var(--colorSurfaceBorder);
+  border-radius: var(--radiusMedium);
+  color: var(--colorTextSecondary);
+}
+
+.sectionBlockAlt .numberedSteps li {
+  background: var(--colorBackgroundDeep);
+}
+
+.numberedSteps li::before {
+  content: counter(stepCounter);
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--colorAccentIconMuted);
+  color: var(--colorAccentPrimary);
+  font-family: var(--fontFamilyDisplay);
+  font-weight: 700;
+  font-size: 0.9375rem;
+  display: grid;
+  place-items: center;
+}
+
+.numberedStepsText {
+  color: var(--colorTextPrimary);
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.disclaimerSection {
+  padding-top: 2rem;
+  padding-bottom: 2.5rem;
+  border-top: 1px solid var(--colorSurfaceBorder);
+}
+
+.disclaimerTitle {
+  font-family: var(--fontFamilyDisplay);
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+  text-align: center;
+  color: var(--colorTextSecondary);
+}
+
+.disclaimerText {
+  margin: 0 auto;
+  max-width: 52ch;
+  text-align: center;
+  font-size: 0.9375rem;
+  line-height: 1.6;
+  color: var(--colorTextMuted);
 }
 
 .featureCard {
@@ -429,6 +602,14 @@ a.buttonSecondary:hover {
   color: var(--colorTextSecondary);
 }
 
+.downloadButtonsRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
 .ctaCode {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
   font-size: 0.85em;
@@ -449,4 +630,81 @@ a.buttonSecondary:hover {
 
 .siteFooter a {
   color: var(--colorTextSecondary);
+}
+
+/* Privacy Policy / legal pages */
+.legalPageBody {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.legalPageMain {
+  flex: 1;
+  padding: 2rem 1.5rem 3rem;
+}
+
+.legalPageArticle {
+  max-width: 42rem;
+  margin: 0 auto;
+}
+
+.legalPageTitle {
+  font-family: var(--fontFamilyDisplay);
+  font-size: clamp(1.75rem, 4vw, 2.25rem);
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin: 0 0 0.5rem;
+  line-height: 1.15;
+}
+
+.legalPageUpdated {
+  margin: 0 0 1.75rem;
+  font-size: 0.9375rem;
+  color: var(--colorTextMuted);
+}
+
+.legalPageIntro {
+  margin: 0 0 2rem;
+  font-size: 1.0625rem;
+  color: var(--colorTextSecondary);
+  line-height: 1.65;
+}
+
+.legalPageSection {
+  margin-bottom: 2rem;
+}
+
+.legalPageSection h2 {
+  font-family: var(--fontFamilyDisplay);
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+  color: var(--colorTextPrimary);
+}
+
+.legalPageSection p {
+  margin: 0 0 1rem;
+  font-size: 1rem;
+  color: var(--colorTextSecondary);
+  line-height: 1.65;
+}
+
+.legalPageSection p:last-child {
+  margin-bottom: 0;
+}
+
+.legalPageList {
+  margin: 0 0 1rem;
+  padding-left: 1.25rem;
+  color: var(--colorTextSecondary);
+  line-height: 1.65;
+}
+
+.legalPageList li {
+  margin-bottom: 0.6rem;
+}
+
+.legalPageList li:last-child {
+  margin-bottom: 0;
 }
