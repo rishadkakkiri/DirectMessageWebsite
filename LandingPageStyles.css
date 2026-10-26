@@ -107,15 +107,13 @@ a.buttonPrimary {
   border: none;
   border-radius: var(--radiusPill);
   cursor: pointer;
-  box-shadow: 0 4px 20px var(--colorAccentGlow);
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
+  transition: transform 0.15s ease;
   text-decoration: none;
 }
 
 .buttonPrimary:hover,
 a.buttonPrimary:hover {
   transform: translateY(-1px);
-  box-shadow: 0 6px 28px var(--colorAccentGlow);
   text-decoration: none;
   color: #fff;
 }
@@ -707,4 +705,48 @@ a.buttonSecondary:hover {
 
 .legalPageList li:last-child {
   margin-bottom: 0;
+}
+
+.legalPageNotice {
+  margin: 0 0 2rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--colorAccentBadgeBackground);
+  border: 1px solid var(--colorAccentBadgeBorder);
+  border-radius: var(--radiusMedium);
+}
+
+.legalPageNoticeTitle,
+.legalPageTocTitle {
+  font-family: var(--fontFamilyDisplay);
+  font-weight: 600;
+  margin: 0 0 0.75rem;
+  color: var(--colorTextPrimary);
+}
+
+.legalPageNotice .legalPageList {
+  margin-bottom: 0;
+}
+
+.legalPageToc {
+  margin: 0 0 2.5rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--colorBackgroundCard);
+  border: 1px solid var(--colorSurfaceBorder);
+  border-radius: var(--radiusMedium);
+}
+
+.legalPageToc .legalPageList {
+  margin-bottom: 0;
+}
+
+.legalPageToc .legalPageList li {
+  margin-bottom: 0.25rem;
+}
+
+.legalPageArticle a {
+  color: var(--colorAccentPrimary);
+}
+
+.legalPageSection h2 {
+  scroll-margin-top: 5rem;
 }
